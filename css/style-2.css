@@ -1,0 +1,148 @@
+/* general--------------------------------------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(../media/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+header{
+    background-color:rgba(0, 0, 0,0.3);
+    position:fixed;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+header nav a{
+    font-size:  20px;
+    text-decoration: none;
+    color: #39304A;
+    margin: 0px 20px;
+    font-weight: bold;
+}
+header nav a:hover{
+    color: #202030;
+    cursor:pointer
+}
+#logo{
+    margin: 0px 100px;
+    font-size: 48px;
+}
+main{
+    padding-top: 100px;
+}
+/* final de lo que es general------------------------------------------------------------- */
+
+/* index ( las tablas tambien estilan a la pagina agenda porque solo se muestra una tabla como agenda) */
+main .hero h1{
+    text-align: center;
+    font-weight:bold;
+    font-size: 64px;
+}
+main .hero p{
+    text-align: center;
+    font-size:24px;
+    font-weight: 400;
+    padding: 0px 50px;
+}
+main #CarouselContainer{
+    display: flex;
+    justify-content: center;
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+.tabla table th{
+    font-weight: bolder;
+    font-size: 48px;
+    color:#d1d1f5;
+    padding: 10px;
+    background-color: rgba(57, 48, 74, 0.9);
+}
+.tabla table td{
+    font-weight:bold;
+    font-size: 36px;
+    color:#9595b4;
+    background-color: rgba(57, 48, 74, 0.6);
+}
+/* final de index------------------------------------------------------------------------- */
+
+/* giftcard------------------------------------------------------------------------------- */
+#gift-card-container{
+    width: 100%;
+    height:auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form form label{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 15px;
+    color: rgb(32, 32, 48);
+}
+.form input{
+    background-color:rgba(57, 48, 74, 0.6);
+    width: 100%;
+    border:none;
+    box-shadow: 0px 10px 10px  rgba(30, 20, 45, 0.5);
+    color: rgb(32, 32, 48);
+}
+.form textarea{
+    width: 100%;
+    background-color:rgba(57, 48, 74, 0.6);
+    box-shadow: 0px 10px 10px  rgba(30, 20, 45, 0.5);
+    border: none;
+    color: rgb(32, 32, 48);
+    margin: 60px 0px;
+}
+#gift-card-container button{
+    background-color: rgba(57, 48, 74, 0.6);
+    border: none;
+    box-shadow: 0px 10px 10px  rgba(30, 20, 45, 0.5);
+    color: rgb(32, 32, 48);
+    margin: 20px;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: large;
+}
+/* final de giftcard--------------------------------------------------------------------- */
+
+/* pagina de contacto --------------------------------------------------------------------*/
+#contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: rgb(32, 32, 48);
+    font-size: 28px;
+}
+#links{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(57, 48, 74, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content:center ;
+}
+#links a{
+    color: rgb(32, 32, 48);
+    font-size: 48px;
+    text-decoration-line: none;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0,0.6); 
+}
+#links a:hover{
+    cursor: pointer;
+    color: rgb(80, 80, 120);
+}
