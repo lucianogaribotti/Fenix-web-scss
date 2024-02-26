@@ -13,18 +13,25 @@ body{
 header{
     background-color:rgba(0, 0, 0,0.3);
     position:fixed;
-    display: flex;
     width: 100vw;
-    justify-content: center;
 }
-header nav a{
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style-type : none;
+}
+header ul li a{
     font-size:  20px;
-    text-decoration: none;
     color: #39304A;
     margin: 0px 20px;
     font-weight: bold;
+    text-decoration-line:none ;
+
 }
-header nav a:hover{
+header li a:hover{
     color: #202030;
     cursor:pointer
 }
@@ -186,9 +193,10 @@ main #CarouselContainer{
 @media (max-width:768px)
 {
     /* general------------------------------------------------------------------------------- */
-    header nav a{
+    header ul {
         padding: 2px;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
