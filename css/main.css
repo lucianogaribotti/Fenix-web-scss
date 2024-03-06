@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", "sans-serif";
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../media/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100vw;
+}
+header #logo {
+  margin: 0px 100px;
+  font-size: 48px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style-type: none;
+}
+header ul li a {
+  font-size: 20px;
+  color: #39304A;
+  margin: 0px 20px;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+header ul li a:hover {
+  color: #202030;
+  cursor: pointer;
+}
+
+main {
+  padding-top: 100px;
+}
+
+/*# sourceMappingURL=main.css.map */
