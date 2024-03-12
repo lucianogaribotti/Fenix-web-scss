@@ -1,0 +1,40 @@
+@import "../general/variables.scss";
+
+main{
+    .hero {
+        h1{
+            text-align: center;
+            font-weight:bold;
+            font-size: 64px;
+            color: $dark-letter;
+        }
+        p{
+            text-align: center;
+            font-size:24px;
+            font-weight: 400;
+            padding: 0px 50px;
+            color: $dark-letter;
+        }
+    }
+    .tabla {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+        .header {
+            @include centrador-magico;
+            color: $light-letter;
+            font-size: 4em;
+            font-weight: 1000;
+            background-color: $bk-principal-color;
+        }
+        .item {
+            @include centrador-magico;
+            padding: 10px;
+            margin:4px;
+            color: $light-letter;
+            font-size: 1.5em;
+            font-weight: 1000;
+            background-color: $bk-principal-color;
+        }
+    }
+}

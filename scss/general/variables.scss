@@ -1,0 +1,12 @@
+$accent-color: #73738c;
+$bk-principal-color: #39304a99;
+$boxsha-principal-color: #1e142d80;
+$dark-letter: #202030;
+$light-letter: #a09182;
+
+@mixin centrador-magico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

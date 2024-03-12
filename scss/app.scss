@@ -1,5 +1,6 @@
-@import './general/reset.scss';
-@import './general/body.scss';
-@import './layout/header.scss';
-@import './general/main.scss';
-
+//general
+@import "./general/reset.scss", "./general/variables.scss", "./general/main.scss", "./general/body.scss";
+// layout
+@import "./layout/header.scss", "./layout/footer.scss";
+//sass-pages
+@import "./sass-pages/index.scss", "./sass-pages/gift-card.scss", "./sass-pages/media.scss", "./sass-pages/contact.scss", "./sass-pages/agenda.scss", "./sass-pages/about-us.scss";

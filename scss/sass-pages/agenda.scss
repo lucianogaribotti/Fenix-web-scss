@@ -1,0 +1,25 @@
+@import "../general/variables.scss" ;
+
+.agenda{
+    .tabla {    
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin: 20px;
+        .header {
+            @include centrador-magico;
+            color: $light-letter;
+            font-size: 3em;
+            font-weight: 1000;
+            background-color: $bk-principal-color;
+        }
+        .item {
+            @include centrador-magico;
+            padding: 10px;
+            margin:4px;
+            color: $light-letter;
+            font-size: 1.5em;
+            font-weight: 1000;
+            background-color: $bk-principal-color;
+        }
+    }
+}

@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+main {
+  padding-top: 100px;
+}
+@media (max-width: 768px) {
+  main {
+    padding-top: 250px;
+  }
+}
+
 body {
   background-image: url(../media/background.jpg);
   background-size: cover;
@@ -26,6 +35,15 @@ header ul {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  header ul {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 header ul li {
   list-style-type: none;
 }
@@ -37,12 +55,229 @@ header ul li a {
   text-decoration-line: none;
 }
 header ul li a:hover {
-  color: #202030;
+  color: #73738c;
   cursor: pointer;
 }
 
-main {
-  padding-top: 100px;
+main .hero h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 64px;
+  color: #202030;
+}
+main .hero p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 0px 50px;
+  color: #202030;
+}
+main .tabla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px;
+}
+main .tabla .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #a09182;
+  font-size: 4em;
+  font-weight: 1000;
+  background-color: rgba(57, 48, 74, 0.6);
+}
+main .tabla .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 4px;
+  color: #a09182;
+  font-size: 1.5em;
+  font-weight: 1000;
+  background-color: rgba(57, 48, 74, 0.6);
+}
+
+main #gift-card-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  main #gift-card-container {
+    padding: 0px 40px;
+  }
+}
+main #gift-card-container button {
+  background-color: rgba(57, 48, 74, 0.6);
+  border: none;
+  box-shadow: 0px 10px 10px rgba(30, 20, 45, 0.5019607843);
+  color: rgb(32, 32, 48);
+  margin: 20px;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: large;
+}
+@media (max-width: 768px) {
+  main #gift-card-container #gift-card h3 {
+    text-align: center;
+    font-weight: 700;
+  }
+}
+main #gift-card-container #gift-card .form form label {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 15px;
+  color: rgb(32, 32, 48);
+}
+main #gift-card-container #gift-card .form form input {
+  background-color: rgba(57, 48, 74, 0.6);
+  width: 100%;
+  border: none;
+  box-shadow: 0px 10px 10px rgba(30, 20, 45, 0.5);
+  color: rgb(32, 32, 48);
+}
+main #gift-card-container #gift-card .form form textarea {
+  width: 100%;
+  background-color: rgba(57, 48, 74, 0.6);
+  box-shadow: 0px 10px 10px rgba(30, 20, 45, 0.5);
+  border: none;
+  color: rgb(32, 32, 48);
+  margin: 60px 0px;
+}
+
+.media-container {
+  display: flex;
+  flex-direction: column;
+}
+.media-container .media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .media-container .media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.media-container .media .content {
+  width: 700px;
+  height: 400px;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .media-container .media .content {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+  }
+}
+.media-container .media .content .media-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: rgb(32, 32, 48);
+  font-size: 28px;
+}
+#contact-container #links {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(57, 48, 74, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#contact-container #links a {
+  color: #202030;
+  font-size: 48px;
+  text-decoration-line: none;
+  text-shadow: 0px 10px 10px rgba(30, 20, 45, 0.5019607843);
+}
+#contact-container #links a:hover {
+  cursor: pointer;
+  color: #73738c;
+}
+
+.agenda .tabla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 20px;
+}
+.agenda .tabla .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #a09182;
+  font-size: 3em;
+  font-weight: 1000;
+  background-color: rgba(57, 48, 74, 0.6);
+}
+.agenda .tabla .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 4px;
+  color: #a09182;
+  font-size: 1.5em;
+  font-weight: 1000;
+  background-color: rgba(57, 48, 74, 0.6);
+}
+
+.text {
+  display: flex;
+}
+.text .about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.text .about-us h2 {
+  text-align: center;
+  color: #202030;
+  font-size: 42px;
+  padding: 0px 10px;
+}
+.text .about-us p {
+  text-align: center;
+  color: #202030;
+  font-size: 22px;
+  padding: 0px 50px;
+}
+.text img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin: 30px;
+}
+@media (max-width: 768px) {
+  .text {
+    flex-direction: column;
+    margin: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

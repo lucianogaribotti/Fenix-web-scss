@@ -1,0 +1,33 @@
+@import "../general/variables.scss";
+
+#contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: rgb(32, 32, 48);
+    font-size: 28px;
+    #links{
+        width: 50%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        background-color: $bk-principal-color;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content:center ;
+        a{
+            color: $dark-letter;
+            font-size: 48px;
+            text-decoration-line: none;
+            text-shadow: 0px 10px 10px $boxsha-principal-color; 
+            &:hover{
+                cursor: pointer;
+                color: $accent-color;
+            }
+        }
+    }
+}
+
