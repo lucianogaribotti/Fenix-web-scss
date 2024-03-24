@@ -18,13 +18,13 @@ body {
   background-image: url(../media/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: center;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
-  width: 100vw;
+  width: 100%;
 }
 header #logo {
   margin: 0px 100px;
@@ -47,6 +47,9 @@ header ul {
 header ul li {
   list-style-type: none;
 }
+header ul li:hover {
+  transform: translate(10px, 5px);
+}
 header ul li a {
   font-size: 20px;
   color: #39304A;
@@ -59,18 +62,33 @@ header ul li a:hover {
   cursor: pointer;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  color: #0a0a0f;
+  background-color: rgba(57, 48, 74, 0.7137254902);
+  font-size: 2em;
+  font-weight: bolder;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+}
+
 main .hero h1 {
   text-align: center;
   font-weight: bold;
   font-size: 64px;
-  color: #202030;
+  color: #0a0a0f;
 }
 main .hero p {
   text-align: center;
   font-size: 24px;
   font-weight: 400;
   padding: 0px 50px;
-  color: #202030;
+  color: #0a0a0f;
 }
 main .tabla {
   display: grid;
@@ -82,10 +100,20 @@ main .tabla .header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #a09182;
+  color: #1a1622;
   font-size: 4em;
   font-weight: 1000;
-  background-color: rgba(57, 48, 74, 0.6);
+  background-color: rgba(57, 48, 74, 0.7137254902);
+}
+@media screen and (max-width: 768px) {
+  main .tabla .header {
+    font-size: 1.6em;
+    padding: 5px;
+    margin: 2px;
+  }
+}
+main .tabla .header:hover {
+  transform: scale(1.03, 1.03);
 }
 main .tabla .item {
   display: flex;
@@ -97,7 +125,17 @@ main .tabla .item {
   color: #a09182;
   font-size: 1.5em;
   font-weight: 1000;
-  background-color: rgba(57, 48, 74, 0.6);
+  background-color: rgba(57, 48, 74, 0.7137254902);
+}
+@media screen and (max-width: 768px) {
+  main .tabla .item {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 2px;
+  }
+}
+main .tabla .item:hover {
+  transform: scale(1.03, 1.03);
 }
 
 main #gift-card-container {
@@ -107,6 +145,7 @@ main #gift-card-container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 150px;
 }
 @media (max-width: 768px) {
   main #gift-card-container {
@@ -114,10 +153,10 @@ main #gift-card-container {
   }
 }
 main #gift-card-container button {
-  background-color: rgba(57, 48, 74, 0.6);
+  background-color: rgba(57, 48, 74, 0.7137254902);
   border: none;
   box-shadow: 0px 10px 10px rgba(30, 20, 45, 0.5019607843);
-  color: rgb(32, 32, 48);
+  color: #0a0a0f;
   margin: 20px;
   padding: 10px 30px;
   font-weight: bold;
@@ -136,19 +175,19 @@ main #gift-card-container #gift-card .form form label {
   color: rgb(32, 32, 48);
 }
 main #gift-card-container #gift-card .form form input {
-  background-color: rgba(57, 48, 74, 0.6);
+  background-color: rgba(57, 48, 74, 0.7137254902);
   width: 100%;
   border: none;
-  box-shadow: 0px 10px 10px rgba(30, 20, 45, 0.5);
+  box-shadow: 0px 10px 10px rgba(30, 20, 45, 0.5019607843);
   color: rgb(32, 32, 48);
 }
 main #gift-card-container #gift-card .form form textarea {
   width: 100%;
-  background-color: rgba(57, 48, 74, 0.6);
-  box-shadow: 0px 10px 10px rgba(30, 20, 45, 0.5);
+  background-color: rgba(57, 48, 74, 0.7137254902);
+  box-shadow: 0px 10px 10px rgba(30, 20, 45, 0.5019607843);
   border: none;
   color: rgb(32, 32, 48);
-  margin: 60px 0px;
+  margin: 20px 0px;
 }
 
 .media-container {
@@ -192,22 +231,34 @@ main #gift-card-container #gift-card .form form textarea {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  color: rgb(32, 32, 48);
+  height: 640px;
   font-size: 28px;
+  margin-bottom: 200px;
+}
+#contact-container p {
+  color: #0a0a0f;
+  font-weight: bold;
+  text-align: center;
 }
 #contact-container #links {
-  width: 50%;
-  height: 600px;
   display: flex;
-  flex-direction: column;
-  background-color: rgba(57, 48, 74, 0.6);
-  border-radius: 10px;
-  text-align: center;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  width: 50%;
+  height: 600px;
+  flex-direction: column;
+  background-color: rgba(57, 48, 74, 0.7137254902);
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  #contact-container #links {
+    height: 450px;
+    width: 70%;
+  }
 }
 #contact-container #links a {
-  color: #202030;
+  color: #0a0a0f;
   font-size: 48px;
   text-decoration-line: none;
   text-shadow: 0px 10px 10px rgba(30, 20, 45, 0.5019607843);
@@ -217,20 +268,37 @@ main #gift-card-container #gift-card .form form textarea {
   color: #73738c;
 }
 
+.agenda {
+  margin-bottom: 200px;
+}
+@media screen and (max-width: 768px) {
+  .agenda {
+    margin-bottom: 337px;
+  }
+}
 .agenda .tabla {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  margin: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 2%;
 }
 .agenda .tabla .header {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #a09182;
+  padding: 10px;
+  margin: 4px;
+  color: #0a0a0f;
   font-size: 3em;
-  font-weight: 1000;
-  background-color: rgba(57, 48, 74, 0.6);
+  font-weight: bolder;
+  background-color: rgba(57, 48, 74, 0.7137254902);
+}
+@media screen and (max-width: 768px) {
+  .agenda .tabla .header {
+    padding: 5px;
+    margin: 2px;
+    font-size: 1.1em;
+  }
 }
 .agenda .tabla .item {
   display: flex;
@@ -241,12 +309,20 @@ main #gift-card-container #gift-card .form form textarea {
   margin: 4px;
   color: #a09182;
   font-size: 1.5em;
-  font-weight: 1000;
-  background-color: rgba(57, 48, 74, 0.6);
+  font-weight: bolder;
+  background-color: rgba(57, 48, 74, 0.7137254902);
+}
+@media screen and (max-width: 768px) {
+  .agenda .tabla .item {
+    padding: 3px;
+    margin: 2px;
+    font-size: 0.7em;
+  }
 }
 
 .text {
   display: flex;
+  margin-bottom: 200px;
 }
 .text .about-us {
   display: flex;
@@ -254,29 +330,46 @@ main #gift-card-container #gift-card .form form textarea {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  background: linear-gradient(180deg, rgba(81, 22, 83, 0.2) 60%, rgba(255, 255, 255, 0.2) 80%);
+  border-radius: 10px;
+  margin: 0px 10px;
 }
-.text .about-us h2 {
+.text .about-us h1 {
   text-align: center;
-  color: #202030;
-  font-size: 42px;
+  color: #0a0a0f;
+  font-size: 3em;
   padding: 0px 10px;
+  font-weight: bolder;
 }
 .text .about-us p {
-  text-align: center;
-  color: #202030;
-  font-size: 22px;
-  padding: 0px 50px;
+  text-align: left;
+  color: #0a0a0f;
+  font-size: 1.8em;
+  padding: 0px 20px;
+  font-weight: bolder;
+}
+@media screen and (max-width: 768px) {
+  .text .about-us p {
+    text-align: center;
+  }
 }
 .text img {
-  max-width: 50%;
+  width: 50%;
   height: auto;
   border-radius: 10px;
   margin: 30px;
 }
 @media (max-width: 768px) {
+  .text img {
+    width: 90%;
+    margin: none;
+  }
+}
+@media (max-width: 768px) {
   .text {
     flex-direction: column;
     margin: 10px;
+    align-items: center;
   }
 }
 

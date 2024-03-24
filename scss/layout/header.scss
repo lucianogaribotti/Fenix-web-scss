@@ -1,12 +1,13 @@
 @import "../general/variables.scss";
 
 header{
-    background-color:rgba(0, 0, 0,0.3);
+    background-color:rgba(0, 0, 0,0.8);
     position:fixed;
-    width: 100vw;
+    width: 100%;
     #logo{
         margin: 0px 100px;
-        font-size: 48px;}
+        font-size: 48px;
+    }
     ul{
         display: flex;
         justify-content: center;
@@ -20,6 +21,9 @@ header{
         }
         li{
             list-style-type : none;
+            &:hover{
+                transform: translate(10px,5px);
+            }
             a{
                 font-size:  20px;
                 color: #39304A;
@@ -28,7 +32,7 @@ header{
                 text-decoration-line:none ;
                 &:hover{
                     color: $accent-color;
-                    cursor:pointer
+                    cursor:pointer;
                 }
             }
         }    

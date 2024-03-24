@@ -1,16 +1,26 @@
 @import "../general/variables.scss" ;
-
 .agenda{
-    .tabla {    
+    margin-bottom: 200px;
+    @media screen and (max-width:768px){
+        margin-bottom: 337px;
+    }
+    .tabla {   
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        margin: 20px;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 2%;
         .header {
             @include centrador-magico;
-            color: $light-letter;
+            padding: 10px;
+            margin:4px;
+            color: $dark-letter;
             font-size: 3em;
-            font-weight: 1000;
+            font-weight: bolder;
             background-color: $bk-principal-color;
+            @media screen and (max-width:768px){
+                padding: 5px;
+                margin:2px;
+                font-size: 1.1em; 
+            }
         }
         .item {
             @include centrador-magico;
@@ -18,8 +28,13 @@
             margin:4px;
             color: $light-letter;
             font-size: 1.5em;
-            font-weight: 1000;
+            font-weight: bolder;
             background-color: $bk-principal-color;
+            @media screen and (max-width:768px){
+                padding: 3px;
+                margin:2px;
+                font-size: 0.7em; 
+            }
         }
     }
 }

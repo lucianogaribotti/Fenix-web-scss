@@ -1,0 +1,12 @@
+@import "../general/variables.scss" ;
+footer{
+    @include centrador-magico;
+    width: 100%;
+    color:$dark-letter;
+    background-color: $bk-principal-color;
+    font-size: 2em;
+    font-weight: bolder;
+    position:sticky;
+    left: 0;
+    bottom: 0;
+}

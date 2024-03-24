@@ -1,5 +1,4 @@
 @import "../general/variables.scss";
-
 main{
     .hero {
         h1{
@@ -22,10 +21,18 @@ main{
         margin: 20px;
         .header {
             @include centrador-magico;
-            color: $light-letter;
+            color: #1a1622;
             font-size: 4em;
             font-weight: 1000;
             background-color: $bk-principal-color;
+            @media screen and (max-width:768px){
+                font-size: 1.6em;
+                padding: 5px;
+                margin:2px;
+            }
+            &:hover{
+                transform: scale(1.03, 1.03);
+            }
         }
         .item {
             @include centrador-magico;
@@ -35,6 +42,14 @@ main{
             font-size: 1.5em;
             font-weight: 1000;
             background-color: $bk-principal-color;
+            @media screen and (max-width:768px){
+                font-size: 1.2em;
+                padding: 5px;
+                margin:2px;
+            }
+            &:hover{
+                transform: scale(1.03, 1.03);
+            }
         }
     }
 }
